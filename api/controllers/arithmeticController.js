@@ -1,3 +1,36 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@Sahana-Anantha 
+Sahana-Anantha
+/
+calculator
+forked from actionsdemos/calculator
+0
+0
+4.5k
+Code
+Pull requests
+1
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+calculator/api/controllers/arithmeticController.js /
+@ethomson
+ethomson Calculations: support exponential notation for operands
+Latest commit 4aca9c1 on Sep 22, 2018
+ History
+ 1 contributor
+50 lines (38 sloc)  1.34 KB
+  
 'use strict';
 
 exports.calculate = function(req, res) {
@@ -11,8 +44,7 @@ exports.calculate = function(req, res) {
   });
 
   var operations = {
-    
-    ‘add’: function(a,b) { return +a + +b },
+    'add':      function(a,b) { return +a + +b },
     'subtract': function(a,b) { return a - b },
     'multiply': function(a,b) { return a * b },
     'divide':   function(a,b) { return a / b },
@@ -49,3 +81,16 @@ exports.calculate = function(req, res) {
 
   res.json({ result: operation(req.query.operand1, req.query.operand2) });
 };
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
