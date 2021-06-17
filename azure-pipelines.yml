@@ -9,7 +9,7 @@ trigger:
 pool:
  name: selfhostedpool
  demands:
- - agent.name -equals agent1 
+ - agent.name -equals selfhostedagent 
 
 steps:
 - task: NodeTool@0
